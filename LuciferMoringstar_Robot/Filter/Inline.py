@@ -89,10 +89,10 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [[
-        InlineKeyboardButton('💠 𝗚𝗿𝗼𝘂𝗽 💠', url='https://t.me/MoviesWorld_Group'),
-        InlineKeyboardButton('💠 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💠', url='https://t.me/Minnal_Murali2021HD')
+        InlineKeyboardButton('💠 𝗚𝗿𝗼𝘂𝗽 💠', url='t.me/MoviesWorld_Group'),
+        InlineKeyboardButton('💠 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💠', url='t.me/Minnal_Murali2021HD')
         ],[  
-        InlineKeyboardButton('♻️ 𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 ♻️', switch_inline_query_current_chat=query)     
+        InlineKeyboardButton('♻️ 𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 ♻️', switch_inline_query_current_chat=query),
         ]]
     return InlineKeyboardMarkup(buttons)
 
